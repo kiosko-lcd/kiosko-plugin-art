@@ -1,0 +1,405 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/200100988#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/200100988",
+    "type": "ProvidedCHO",
+    "created": [
+      {
+        "@language": "en",
+        "@value": "1899"
+      },
+      {
+        "@language": "nl",
+        "@value": "1899"
+      }
+    ],
+    "creator": [
+      {
+        "id": "https://id.rijksmuseum.nl/2103209",
+        "type": "edm:Agent",
+        "http://rdvocab.info/ElementsGr2/dateOfBirth": {
+          "@language": "nl",
+          "@value": "1858-12-20"
+        },
+        "http://rdvocab.info/ElementsGr2/dateOfDeath": {
+          "@language": "nl",
+          "@value": "1928-03-03 - 1928-03-30"
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfBirth": {
+          "id": "https://id.rijksmuseum.nl/2305284",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Poerworedjo"
+          }
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfDeath": {
+          "id": "https://id.rijksmuseum.nl/2301261",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+              "@language": "en",
+              "@value": "The Hague"
+            },
+            {
+              "@language": "nl",
+              "@value": "Den Haag"
+            }
+          ]
+        },
+        "http://rdvocab.info/ElementsGr2/professionOrOccupation": [
+          {
+            "id": "https://id.rijksmuseum.nl/2202217",
+            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
+              {
+                "@language": "en",
+                "@value": "painter"
+              },
+              {
+                "@language": "nl",
+                "@value": "schilder"
+              }
+            ]
+          },
+          {
+            "id": "https://id.rijksmuseum.nl/2202348",
+            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
+              {
+                "@language": "en",
+                "@value": "printmaker"
+              },
+              {
+                "@language": "nl",
+                "@value": "prentmaker"
+              }
+            ]
+          },
+          {
+            "id": "https://id.rijksmuseum.nl/2202371",
+            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
+              {
+                "@language": "en",
+                "@value": "draftsman (artist)"
+              },
+              {
+                "@language": "nl",
+                "@value": "tekenaar"
+              }
+            ]
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "Toorop, Jan"
+          },
+          {
+            "@language": "nl",
+            "@value": "Johannes Theodorus Toorop"
+          },
+          {
+            "@language": "nl",
+            "@value": "Toorop, Jan"
+          },
+          {
+            "@language": "nl",
+            "@value": "Toorop, Johannes Theodorus"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Jan Toorop"
+          },
+          {
+            "@language": "nl",
+            "@value": "Jan Toorop"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/130145857839423020282",
+          "http://vocab.getty.edu/ulan/500017535",
+          "http://www.wikidata.org/entity/Q369416",
+          "https://rkd.nl/artists/77873"
+        ]
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/2208",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "painting"
+          },
+          {
+            "@language": "nl",
+            "@value": "schilderij"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "en": "This work is painted in the Pointillist style, the basic principle of which is creating an optical effect through the application of hundreds of small dots of pure unmixed pigment that are perceived by the viewer\u2019s eye as variegated mixed colours. The light ground shining through between the dots lends the picture luminosity. In this way, Toorop obtained the effect of translucency in this mysterious, tenuous seascape.",
+      "nl": "Dit werk is geschilderd in pointillistische stijl. Uitgangspunt daarbij is het optische effect, dat kleine stipjes verf in ongemengde pigmenten door het oog worden waargenomen als rijkgeschakeerde kleuren. De lichte ondergrond die tussen de stipjes doorschemert zorgt voor helderheid. Door zo te werken, verkreeg Toorop het doorzichtige effect in dit ijle, mysterieuze zeegezicht."
+    },
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "height 39.5 cm x width 43.5 cm"
+      },
+      {
+        "@language": "en",
+        "@value": "height 64.5 cm x width 68 cm x depth 7.5 cm"
+      },
+      {
+        "@language": "nl",
+        "@value": "buitenmaat: hoogte 64,5 cm x breedte 68 cm x diepte 7,5 cm"
+      },
+      {
+        "@language": "nl",
+        "@value": "hoogte 39,5 cm x breedte 43,5 cm"
+      }
+    ],
+    "http://id.loc.gov/vocabulary/relators/spn": [
+      {
+        "@language": "en",
+        "@value": "On loan from the Triton Collection Foundation"
+      },
+      {
+        "@language": "nl",
+        "@value": "Bruikleen van de Triton Collection Foundation"
+      }
+    ],
+    "http://www.europeanafashion.eu/edmfp/technique": {
+      "id": "https://id.rijksmuseum.nl/2204040",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2004/02/skos/core#altLabel": {
+        "@language": "nl",
+        "@value": "geschilderd"
+      },
+      "http://www.w3.org/2004/02/skos/core#prefLabel": [
+        {
+          "@language": "en",
+          "@value": "paint"
+        },
+        {
+          "@language": "nl",
+          "@value": "schilderen"
+        }
+      ]
+    },
+    "identifier": [
+      "SK-C-1726"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/261208",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "paintings"
+          },
+          {
+            "@language": "nl",
+            "@value": "schilderijen"
+          }
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/22010",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "canvas"
+          },
+          {
+            "@language": "nl",
+            "@value": "doek"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2209",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "oil paint (paint)"
+          },
+          {
+            "@language": "nl",
+            "@value": "olieverf"
+          }
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "id": "https://id.rijksmuseum.nl/2301657",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Katwijk (Zuid-Holland)"
+        },
+        "sameAs": [
+          "http://www.wikidata.org/entity/Q2627252",
+          "https://sws.geonames.org/2753011/"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/22121024",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "47K13",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/47K13"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "crustacean fishery"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221767",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "25H133",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/25H133"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "beach"
+        }
+      }
+    ],
+    "title": {
+      "en": "Misty Sea",
+      "nl": "Misty Sea"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/SK-C-1726--d6666ce4b09b319db68940ed0db5573b",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/mPymb/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/mPymb",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/mPymb/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/mPymb",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+ "@context": "https://iiif.io/api/presentation/2/context.json",
+ "@id": "https://digitalarchive.npm.gov.tw/Integrate/GetJson?cid=35407&dept=P&imageName=",
+ "@type": "sc:Manifest",
+ "label": "NPM 故宮 - 民國吳子深竹石　單片",
+ "logo": "https://www.npm.gov.tw/images/favicon/apple-icon-57x57.png",
+ "metadata": [
+  {
+   "label": "Chinese Title",
+   "value": "民國吳子深竹石　單片"
+  },
+  {
+   "label": "Time",
+   "value": ""
+  }
+ ],
+ "rendering": [
+  {
+   "@id": "https://digitalarchive.npm.gov.tw/Collection/Detail?id=35407&dep=P",
+   "format": "text/html",
+   "label": "DigitalArchives"
+  },
+  {
+   "@id": "https://digitalarchive.npm.gov.tw/Integrate/IIIFViewer?id=35407&dep=P&imageName=",
+   "format": "text/html",
+   "label": "IIIF Viewer"
+  }
+ ],
+ "license": "https://data.gov.tw/license",
+ "viewingDirection": "left-to-right",
+ "viewingHint": null,
+ "sequences": [
+  {
+   "@type": "sc:Sequence",
+   "canvases": [
+    {
+     "label": "B2A001077N000000000PAA",
+     "@id": "https://digitalarchive.npm.gov.tw/Canvas/B2A001077N000000000PAA",
+     "@type": "sc:Canvas",
+     "height": "2482",
+     "width": "1860",
+     "images": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Annotation/B2A001077N000000000PAA",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "on": "https://digitalarchive.npm.gov.tw/Canvas/B2A001077N000000000PAA",
+       "resource": {
+        "description": "",
+        "@id": "https://iiifod.npm.gov.tw/iiif/2/B2A%2FB2A001077N000000000PAA/full/,300/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "service": {
+         "@id": "https://iiifod.npm.gov.tw/iiif/2/B2A%2FB2A001077N000000000PAA",
+         "@context": "https://iiif.io/api/image/2/context.json",
+         "profile": "https://iiif.io/api/image/2/level1.json"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

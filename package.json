@@ -1,0 +1,86 @@
+{
+  "name": "kiosko-plugin-art",
+  "version": "0.1.0",
+  "description": "A work of art of the day on a small USB LCD panel: a public-domain painting, photograph or print from The Met, the Art Institute of Chicago, the Rijksmuseum or Taiwan's National Palace Museum, fitted to the panel's shape (whole on square tiles, a smart crop on long strips), with its title, artist, year, museum and credit always on screen. Also as a full-screen interlude. No keys needed.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Loksly <info@kioskolcd.dev> (https://kioskolcd.dev)",
+  "keywords": [
+    "kiosko",
+    "kiosko-plugin",
+    "lcd",
+    "widgets",
+    "art",
+    "painting",
+    "museum",
+    "public-domain",
+    "cc0",
+    "iiif",
+    "metmuseum",
+    "artic",
+    "rijksmuseum",
+    "national-palace-museum",
+    "interlude"
+  ],
+  "homepage": "https://github.com/kiosko-lcd/kiosko-plugin-art#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiosko-lcd/kiosko-plugin-art.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiosko-lcd/kiosko-plugin-art/issues"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "kiosko": {
+    "plugin": "./dist/index.js",
+    "id": "art",
+    "sdk": "^0.2.0",
+    "languages": [
+      "en",
+      "es",
+      "de",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "manifest": "./kiosko-manifest.json"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "files": [
+    "dist",
+    "docs",
+    "kiosko-manifest.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --conditions=source --test \"src/**/*.test.ts\"",
+    "check": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@kiosko/sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@kiosko/core": "^0.2.11",
+    "@kiosko/sdk": "^0.2.11",
+    "@loksly/lcd-canvas-kit": "^0.2.0",
+    "@napi-rs/canvas": "^1.0.10",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.9.3"
+  }
+}

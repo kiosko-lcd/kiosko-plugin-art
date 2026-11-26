@@ -1,0 +1,432 @@
+{
+  "manifest": 1,
+  "id": "art",
+  "package": "kiosko-plugin-art",
+  "name": {
+    "en": "A work of art a day",
+    "es": "Una obra del día",
+    "de": "Ein Kunstwerk am Tag",
+    "zh-Hans": "每日一件艺术品",
+    "zh-Hant": "每日一件藝術品"
+  },
+  "version": "0.1.0",
+  "description": {
+    "en": "A work of art of the day on the panel: a public-domain painting, photograph or print from The Met, the Art Institute of Chicago, the Rijksmuseum or Taiwan's National Palace Museum, fitted to the tile's shape (whole on squarish ones, the most interesting band on long strips), with its title, artist, year, museum and credit always on screen. Also full screen, as an interlude. No keys needed.",
+    "es": "Una obra de arte al día en el panel: un cuadro, una fotografía o un grabado de dominio público del Met, el Art Institute of Chicago, el Rijksmuseum o el Museo del Palacio Nacional de Taiwán, encajado a la forma del hueco (entero en los cuadrados, la franja más interesante en las barras largas), con su título, autor, año, museo y crédito siempre en pantalla. También a pantalla completa, como interludio. Sin claves.",
+    "de": "Ein Kunstwerk des Tages auf dem Panel: ein gemeinfreies Gemälde, Foto oder Druckwerk aus dem Met, dem Art Institute of Chicago, dem Rijksmuseum oder dem Nationalen Palastmuseum in Taiwan, passend zur Form der Kachel (ganz auf quadratischen, der interessanteste Streifen auf langen Leisten), Titel, Künstler, Jahr, Museum und Nennung immer auf dem Bildschirm. Auch im Vollbild, als Zwischenspiel. Ohne Schlüssel.",
+    "zh-Hans": "在面板上每天欣赏一件艺术品：来自大都会艺术博物馆、芝加哥艺术博物馆、荷兰国家博物馆或台北故宫博物院的公有领域绘画、摄影或版画，按方块形状呈现（方形方块显示完整作品，长条显示最有看点的一段），标题、作者、年代、博物馆和出处始终显示在屏幕上。也可作为全屏过场动画。无需密钥。",
+    "zh-Hant": "在面板上每天欣賞一件藝術品：來自大都會藝術博物館、芝加哥藝術博物館、荷蘭國家博物館或國立故宮博物院的公有領域繪畫、攝影或版畫，依方塊形狀呈現（方形方塊顯示完整作品，長條顯示最有看頭的一段），標題、作者、年代、博物館和出處始終顯示在螢幕上。也可作為全螢幕過場動畫。無需金鑰。"
+  },
+  "author": "Loksly",
+  "license": "MIT",
+  "homepage": "https://github.com/kiosko-lcd/kiosko-plugin-art#readme",
+  "repository": "https://github.com/kiosko-lcd/kiosko-plugin-art",
+  "icon": "image",
+  "sdk": "^0.2.0",
+  "platforms": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "de",
+    "zh-Hant",
+    "zh-Hans"
+  ],
+  "categories": [
+    "media"
+  ],
+  "tags": [
+    "art",
+    "museum",
+    "painting",
+    "public-domain",
+    "photo"
+  ],
+  "permissions": {
+    "network": [
+      "collectionapi.metmuseum.org",
+      "images.metmuseum.org",
+      "api.artic.edu",
+      "www.artic.edu",
+      "data.rijksmuseum.nl",
+      "iiif.micr.io",
+      "digitalarchive.npm.gov.tw",
+      "iiifod.npm.gov.tw"
+    ]
+  },
+  "riskyOptions": [],
+  "requires": [],
+  "optional": [],
+  "widgets": [
+    {
+      "type": "art/work",
+      "name": {
+        "en": "Work of the day",
+        "es": "Obra del día",
+        "de": "Werk des Tages",
+        "zh-Hans": "每日一作",
+        "zh-Hant": "每日一作"
+      },
+      "description": {
+        "en": "A public-domain painting, photograph or print from a great museum, a different one each day, fitted to the tile: whole on squarish tiles, the most interesting band on long strips. Its title, artist, year, museum and licence are always on screen.",
+        "es": "Un cuadro, una fotografía o un grabado de dominio público de un gran museo, uno distinto cada día, encajado al hueco: entero en los cuadrados, la franja más interesante en las barras largas. Su título, autor, año, museo y licencia siempre en pantalla.",
+        "de": "Ein gemeinfreies Gemälde, Foto oder Druckwerk aus einem großen Museum, jeden Tag ein anderes, passend zur Kachel: ganz auf quadratischen Kacheln, der interessanteste Streifen auf langen Leisten. Titel, Künstler, Jahr, Museum und Lizenz stehen immer auf dem Bildschirm.",
+        "zh-Hans": "来自大型博物馆的公有领域绘画、摄影或版画，每天一件，按方块形状呈现：方形方块显示完整作品，长条只显示最有看点的一段。标题、作者、年代、博物馆和授权始终显示在屏幕上。",
+        "zh-Hant": "來自大型博物館的公有領域繪畫、攝影或版畫，每天一件，依方塊形狀呈現：方形方塊顯示完整作品，長條只顯示最有看頭的一段。標題、作者、年代、博物館和授權始終顯示在螢幕上。"
+      },
+      "icon": "image",
+      "category": "media",
+      "tags": [
+        "art",
+        "museum",
+        "painting",
+        "public-domain",
+        "photo"
+      ],
+      "size": {
+        "min": {
+          "w": 120,
+          "h": 30
+        },
+        "preferred": {
+          "w": 480,
+          "h": 320
+        }
+      },
+      "chrome": "bare",
+      "sources": [
+        "art/today"
+      ],
+      "options": {
+        "default": {
+          "fit": "auto",
+          "caption": "auto"
+        },
+        "x-ui": {},
+        "type": "object",
+        "properties": {
+          "fit": {
+            "title": "Fit",
+            "description": "By the tile’s shape: whole when it fills most of the tile, else the most interesting part of it (on a long strip, the best band).",
+            "default": "auto",
+            "x-ui": {
+              "label": {
+                "en": "Fit",
+                "es": "Ajuste",
+                "de": "Einpassen",
+                "zh-Hans": "缩放方式",
+                "zh-Hant": "縮放方式"
+              },
+              "help": {
+                "en": "By the tile’s shape: whole when it fills most of the tile, else the most interesting part of it (on a long strip, the best band).",
+                "es": "Según la forma: entera cuando llena casi todo el hueco; si no, su parte más interesante (en una barra larga, la mejor franja).",
+                "de": "Nach Form: ganz, wenn es den Großteil der Kachel füllt, sonst sein interessantester Teil (auf einer langen Leiste der beste Streifen).",
+                "zh-Hans": "按形状：能填满方块大部分时显示完整作品，否则显示最有看点的部分（长条上为最佳的一段）。",
+                "zh-Hant": "依形狀：能填滿方塊大部分時顯示完整作品，否則顯示最有看頭的部分（長條上為最佳的一段）。"
+              },
+              "labels": {
+                "auto": {
+                  "en": "By the tile’s shape",
+                  "es": "Según la forma del hueco",
+                  "de": "Nach Form der Kachel",
+                  "zh-Hans": "按方块形状",
+                  "zh-Hant": "依方塊形狀"
+                },
+                "whole": {
+                  "en": "Always whole",
+                  "es": "Siempre entera",
+                  "de": "Immer ganz",
+                  "zh-Hans": "始终完整",
+                  "zh-Hant": "一律完整"
+                },
+                "fill": {
+                  "en": "Always fill (the best part)",
+                  "es": "Siempre llenar (la mejor parte)",
+                  "de": "Immer füllen (der beste Teil)",
+                  "zh-Hans": "始终填满（最精彩的部分）",
+                  "zh-Hant": "一律填滿（最精彩的部分）"
+                }
+              }
+            },
+            "type": "string",
+            "enum": [
+              "auto",
+              "whole",
+              "fill"
+            ]
+          },
+          "caption": {
+            "title": "Caption",
+            "description": "Title, artist, year, museum and licence are always shown: the museums’ terms ask for the credit.",
+            "default": "auto",
+            "x-ui": {
+              "label": {
+                "en": "Caption",
+                "es": "Rótulo",
+                "de": "Bildunterschrift",
+                "zh-Hans": "说明文字",
+                "zh-Hant": "說明文字"
+              },
+              "help": {
+                "en": "Title, artist, year, museum and licence are always shown: the museums’ terms ask for the credit.",
+                "es": "Título, autor, año, museo y licencia siempre se muestran: los museos piden el crédito.",
+                "de": "Titel, Künstler, Jahr, Museum und Lizenz werden immer gezeigt: Die Museen verlangen die Nennung.",
+                "zh-Hans": "标题、作者、年代、博物馆和授权始终显示：博物馆要求注明出处。",
+                "zh-Hant": "標題、作者、年代、博物館和授權始終顯示：博物館要求標示出處。"
+              },
+              "labels": {
+                "auto": {
+                  "en": "Beside or under the work when there is room",
+                  "es": "Al lado o debajo de la obra si cabe",
+                  "de": "Neben oder unter dem Werk, wenn Platz ist",
+                  "zh-Hans": "有空间时放在作品旁边或下方",
+                  "zh-Hant": "有空間時放在作品旁邊或下方"
+                },
+                "panel": {
+                  "en": "Beside or under, making room",
+                  "es": "Al lado o debajo, haciendo sitio",
+                  "de": "Daneben oder darunter, mit Platz",
+                  "zh-Hans": "放在旁边或下方，并留出空间",
+                  "zh-Hant": "放在旁邊或下方，並留出空間"
+                },
+                "overlay": {
+                  "en": "Over the work",
+                  "es": "Sobre la obra",
+                  "de": "Über dem Werk",
+                  "zh-Hans": "叠在作品上",
+                  "zh-Hant": "疊在作品上"
+                }
+              }
+            },
+            "type": "string",
+            "enum": [
+              "auto",
+              "panel",
+              "overlay"
+            ]
+          }
+        }
+      },
+      "screenshot": "docs/work.png",
+      "animated": false,
+      "urgent": false
+    }
+  ],
+  "sources": [
+    {
+      "type": "art/today",
+      "name": {
+        "en": "Work of the day",
+        "es": "Obra del día",
+        "de": "Werk des Tages",
+        "zh-Hans": "每日一作",
+        "zh-Hant": "每日一作"
+      },
+      "description": {
+        "en": "A public-domain work from a museum's open collection, the same all day (or for a few hours), changing at midnight. Kept on disk with its image, at the size the panels need: the museum is asked once a day.",
+        "es": "Una obra de dominio público de la colección abierta de un museo, la misma todo el día (o unas horas), que cambia a medianoche. Se guarda en disco con su imagen, al tamaño que piden los paneles: al museo se le pregunta una vez al día.",
+        "de": "Ein gemeinfreies Werk aus der offenen Sammlung eines Museums, den ganzen Tag dasselbe (oder ein paar Stunden), Wechsel um Mitternacht. Mit seinem Bild in der Größe, die die Panels brauchen, auf der Platte gespeichert: Das Museum wird einmal am Tag gefragt.",
+        "zh-Hans": "博物馆开放馆藏中的一件公有领域作品，全天（或几小时内）不变，午夜更换。作品和图片按面板所需的尺寸保存在磁盘上：每天只向博物馆请求一次。",
+        "zh-Hant": "博物館開放館藏中的一件公有領域作品，全天（或幾小時內）不變，午夜更換。作品和圖片依面板所需的尺寸儲存在磁碟上：每天只向博物館請求一次。"
+      },
+      "polled": true,
+      "intervalMs": 300000,
+      "options": {
+        "default": {
+          "provider": "auto",
+          "kind": "painting",
+          "rotateMs": 0
+        },
+        "x-ui": {},
+        "type": "object",
+        "properties": {
+          "provider": {
+            "title": "Museum",
+            "description": "Whose collection. All of them without a key; only public-domain and CC0 works are shown.",
+            "default": "auto",
+            "x-ui": {
+              "label": {
+                "en": "Museum",
+                "es": "Museo",
+                "de": "Museum",
+                "zh-Hans": "博物馆",
+                "zh-Hant": "博物館"
+              },
+              "help": {
+                "en": "Whose collection. All of them without a key; only public-domain and CC0 works are shown.",
+                "es": "De qué colección. Todos sin clave; solo se muestran obras de dominio público o CC0.",
+                "de": "Aus welcher Sammlung. Alle ohne Schlüssel; nur gemeinfreie und CC0-Werke werden gezeigt.",
+                "zh-Hans": "来自哪家博物馆的馆藏。均无需密钥；只显示公有领域和 CC0 作品。",
+                "zh-Hant": "來自哪家博物館的館藏。皆無需金鑰；只顯示公有領域和 CC0 作品。"
+              },
+              "labels": {
+                "auto": {
+                  "en": "A different museum each day (the National Palace Museum in Traditional Chinese)",
+                  "es": "Un museo distinto cada día (el Museo del Palacio Nacional en chino tradicional)",
+                  "de": "Jeden Tag ein anderes Museum (auf traditionellem Chinesisch das Nationale Palastmuseum)",
+                  "zh-Hans": "每天换一家博物馆（繁体中文时为台北故宫博物院）",
+                  "zh-Hant": "每天換一家博物館（繁體中文時為國立故宮博物院）"
+                },
+                "met": {
+                  "en": "The Met (New York)",
+                  "es": "The Met (Nueva York)",
+                  "de": "The Met (New York)",
+                  "zh-Hans": "大都会艺术博物馆（纽约）",
+                  "zh-Hant": "大都會藝術博物館（紐約）"
+                },
+                "aic": {
+                  "en": "Art Institute of Chicago",
+                  "es": "Art Institute of Chicago",
+                  "de": "Art Institute of Chicago",
+                  "zh-Hans": "芝加哥艺术博物馆",
+                  "zh-Hant": "芝加哥藝術博物館"
+                },
+                "rijks": {
+                  "en": "Rijksmuseum (Amsterdam)",
+                  "es": "Rijksmuseum (Ámsterdam)",
+                  "de": "Rijksmuseum (Amsterdam)",
+                  "zh-Hans": "荷兰国家博物馆（阿姆斯特丹）",
+                  "zh-Hant": "荷蘭國家博物館（阿姆斯特丹）"
+                },
+                "npm": {
+                  "en": "National Palace Museum (Taipei)",
+                  "es": "Museo del Palacio Nacional (Taipéi)",
+                  "de": "Nationales Palastmuseum (Taipeh)",
+                  "zh-Hans": "台北故宫博物院",
+                  "zh-Hant": "國立故宮博物院"
+                }
+              }
+            },
+            "type": "string",
+            "enum": [
+              "auto",
+              "met",
+              "aic",
+              "rijks",
+              "npm"
+            ]
+          },
+          "kind": {
+            "title": "What",
+            "description": "The National Palace Museum has paintings only.",
+            "default": "painting",
+            "x-ui": {
+              "label": {
+                "en": "What",
+                "es": "Qué",
+                "de": "Was",
+                "zh-Hans": "类型",
+                "zh-Hant": "類型"
+              },
+              "help": {
+                "en": "The National Palace Museum has paintings only.",
+                "es": "El Museo del Palacio Nacional solo tiene pintura.",
+                "de": "Das Nationale Palastmuseum hat nur Gemälde.",
+                "zh-Hans": "台北故宫博物院只提供绘画。",
+                "zh-Hant": "國立故宮博物院只提供繪畫。"
+              },
+              "labels": {
+                "painting": {
+                  "en": "Paintings",
+                  "es": "Pintura",
+                  "de": "Gemälde",
+                  "zh-Hans": "绘画",
+                  "zh-Hant": "繪畫"
+                },
+                "photograph": {
+                  "en": "Photographs",
+                  "es": "Fotografía",
+                  "de": "Fotografien",
+                  "zh-Hans": "摄影",
+                  "zh-Hant": "攝影"
+                },
+                "print": {
+                  "en": "Prints",
+                  "es": "Grabados",
+                  "de": "Druckgrafik",
+                  "zh-Hans": "版画",
+                  "zh-Hant": "版畫"
+                },
+                "any": {
+                  "en": "Any of them, a different one each day",
+                  "es": "Cualquiera, uno distinto cada día",
+                  "de": "Alles, jeden Tag etwas anderes",
+                  "zh-Hans": "任意，每天不同",
+                  "zh-Hant": "任意，每天不同"
+                }
+              }
+            },
+            "type": "string",
+            "enum": [
+              "painting",
+              "photograph",
+              "print",
+              "any"
+            ]
+          },
+          "rotateMs": {
+            "title": "A new work every",
+            "description": "0: one a day, changing at midnight. 6 h: four a day (at 0:00, 6:00, 12:00 and 18:00). Whole hours.",
+            "default": 0,
+            "x-ui": {
+              "label": {
+                "en": "A new work every",
+                "es": "Una obra nueva cada",
+                "de": "Ein neues Werk alle",
+                "zh-Hans": "每隔多久换一件",
+                "zh-Hant": "每隔多久換一件"
+              },
+              "help": {
+                "en": "0: one a day, changing at midnight. 6 h: four a day (at 0:00, 6:00, 12:00 and 18:00). Whole hours.",
+                "es": "0: una al día, cambia a medianoche. 6 h: cuatro al día (a las 0:00, 6:00, 12:00 y 18:00). En horas enteras.",
+                "de": "0: eines pro Tag, Wechsel um Mitternacht. 6 h: vier am Tag (um 0:00, 6:00, 12:00 und 18:00). In ganzen Stunden.",
+                "zh-Hans": "0：每天一件，午夜更换。6 小时：每天四件（0:00、6:00、12:00 和 18:00）。以整小时计。",
+                "zh-Hant": "0：每天一件，午夜更換。6 小時：每天四件（0:00、6:00、12:00 和 18:00）。以整小時計。"
+              },
+              "unit": "ms"
+            },
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 43200000
+          }
+        }
+      }
+    }
+  ],
+  "interludes": [
+    {
+      "type": "art/show",
+      "name": {
+        "en": "Work of the day, full screen",
+        "es": "Obra del día, a pantalla completa",
+        "de": "Werk des Tages, im Vollbild",
+        "zh-Hans": "每日一作（全屏）",
+        "zh-Hant": "每日一作（全螢幕）"
+      },
+      "description": {
+        "en": "Today's work over the whole panel for a few seconds, with a slow zoom towards its most interesting part (on a long strip, a slow scan along it), and its credit on screen.",
+        "es": "La obra de hoy en todo el panel unos segundos, con un zoom lento hacia su parte más interesante (en una barra larga, un recorrido lento a lo largo de ella), y su crédito en pantalla.",
+        "de": "Das Werk des Tages einige Sekunden auf dem ganzen Panel, mit einem langsamen Zoom zu seinem interessantesten Teil (auf einer langen Leiste ein langsamer Schwenk entlang), und seiner Nennung auf dem Bildschirm.",
+        "zh-Hans": "今天的作品占满整个面板几秒钟，缓慢放大到最有看点的部分（长条上则缓慢平移），并在屏幕上标明出处。",
+        "zh-Hant": "今天的作品占滿整個面板幾秒鐘，緩慢放大到最有看頭的部分（長條上則緩慢平移），並在螢幕上標示出處。"
+      },
+      "icon": "image",
+      "fps": 12,
+      "preview": {
+        "poster": "docs/show.jpg"
+      }
+    }
+  ],
+  "templates": [],
+  "support": {
+    "issues": "https://github.com/kiosko-lcd/kiosko-plugin-art/issues",
+    "docs": "https://github.com/kiosko-lcd/kiosko-plugin-art#readme"
+  },
+  "resources": {
+    "memoryMb": 40,
+    "cpu": "low"
+  }
+}

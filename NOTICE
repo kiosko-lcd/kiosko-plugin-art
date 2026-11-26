@@ -1,0 +1,55 @@
+kiosko-plugin-art
+Copyright (c) 2026 Loksly. MIT licence (see LICENSE).
+
+The works this plugin shows, their images and their data belong to the
+museums below and are not covered by this plugin's licence. The plugin asks
+only for works each museum marks as free to use, and always shows, with the
+work, its title, artist and date, the museum and the licence (or the credit
+line the museum's terms give). It uses no museum's logo, and Kiosko and this
+plugin are not affiliated with, nor endorsed by, any of them.
+
+The Metropolitan Museum of Art, New York
+  Collection API, https://collectionapi.metmuseum.org (no key).
+  Open Access data is published under Creative Commons Zero (CC0); images of
+  works in the public domain (`isPublicDomain`) are free for any use.
+  https://metmuseum.github.io/  https://www.metmuseum.org/hubs/open-access
+  Shown as: "The Met · Public domain".
+
+Art Institute of Chicago
+  API, https://api.artic.edu, and IIIF images, https://www.artic.edu/iiif/2
+  (no key). Data CC0 except the `description` field (CC BY 4.0), which this
+  plugin does not use. Images of public-domain works (`is_public_domain`)
+  are CC0 ("CC0 Public Domain Designation"), under the Terms and Conditions
+  of artic.edu. Requests carry an `AIC-User-Agent` header, as its docs ask.
+  https://api.artic.edu/docs/  https://www.artic.edu/image-licensing
+  https://www.artic.edu/terms
+  Shown as: "Art Institute of Chicago · CC0".
+
+Rijksmuseum, Amsterdam
+  Data services, https://data.rijksmuseum.nl (search, EDM records) and IIIF
+  images, https://iiif.micr.io (no key). Only images under the Public Domain
+  Mark 1.0 or CC0 1.0 (`edmRights`) are shown. Its Information and Data
+  Policy allows free use and kindly asks to credit the Rijksmuseum.
+  https://data.rijksmuseum.nl/policy/
+  Shown as: "Rijksmuseum · Public domain" (or "· CC0").
+
+National Palace Museum (國立故宮博物院), Taipei
+  Open data, https://digitalarchive.npm.gov.tw/opendata/ (search and IIIF
+  manifests) and IIIF images, https://iiifod.npm.gov.tw (no key). Its open
+  data statement: images up to 1 megapixel are dedicated to the public domain
+  (CC0); images up to 6 megapixels and the site's texts are under CC BY 4.0,
+  free to use without application, for any purpose, free of charge, with
+  the attribution "<title> The National Palace Museum, Taipei, CC BY 4.0 @
+  www.npm.gov.tw" (or "<title> 國立故宮博物院，臺北，CC BY 4.0 @
+  www.npm.gov.tw"). This plugin asks for images of at most 1 megapixel,
+  shows paintings from before 1912 only, and shows that attribution with the
+  title.
+  Shown as: "The National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw"
+  (in Chinese for Chinese readers).
+
+The test fixtures in src/fixtures are answers of these APIs saved on 26
+November 2026 (JSON, and one trimmed HTML page of the National Palace
+Museum's search), under the licences above; they contain no images. The
+screenshots in docs/ show Gustave Caillebotte, "Paris Street; Rainy Day",
+1877, Art Institute of Chicago, CC0. The demo picture ("Hills at dawn") is
+drawn by the plugin.
