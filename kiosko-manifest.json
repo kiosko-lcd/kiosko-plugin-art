@@ -9,7 +9,7 @@
     "zh-Hans": "每日一件艺术品",
     "zh-Hant": "每日一件藝術品"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": {
     "en": "A work of art of the day on the panel: a public-domain painting, photograph or print from The Met, the Art Institute of Chicago, the Rijksmuseum or Taiwan's National Palace Museum, fitted to the tile's shape (whole on squarish ones, the most interesting band on long strips), with its title, artist, year, museum and credit always on screen. Also full screen, as an interlude. No keys needed.",
     "es": "Una obra de arte al día en el panel: un cuadro, una fotografía o un grabado de dominio público del Met, el Art Institute of Chicago, el Rijksmuseum o el Museo del Palacio Nacional de Taiwán, encajado a la forma del hueco (entero en los cuadrados, la franja más interesante en las barras largas), con su título, autor, año, museo y crédito siempre en pantalla. También a pantalla completa, como interludio. Sin claves.",

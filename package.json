@@ -1,6 +1,6 @@
 {
   "name": "kiosko-plugin-art",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A work of art of the day on a small USB LCD panel: a public-domain painting, photograph or print from The Met, the Art Institute of Chicago, the Rijksmuseum or Taiwan's National Palace Museum, fitted to the panel's shape (whole on square tiles, a smart crop on long strips), with its title, artist, year, museum and credit always on screen. Also as a full-screen interlude. No keys needed.",
   "type": "module",
   "license": "MIT",
