@@ -1,0 +1,325 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/20028306#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/20028306",
+    "type": "ProvidedCHO",
+    "created": [
+      {
+        "@language": "en",
+        "@value": "1450 - 1460"
+      },
+      {
+        "@language": "nl",
+        "@value": "1450 - 1460"
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/2208",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "painting"
+          },
+          {
+            "@language": "nl",
+            "@value": "schilderij"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220969",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "frame"
+          },
+          {
+            "@language": "nl",
+            "@value": "schilderijlijst"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "nl": "Lijst beschilderd met bovenaan op de fries de verkondiging aan Maria, onderaan op het basement de doop van Christus en de intocht in Jeruzalem. Aan weerszijden de heiligen Cecilia en Catharina en vier andere musicerende heiligen of engelen. Aan de bovenkant in de tympanon een voorstelling van de Genadestoel."
+    },
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "height 146 cm x width 86.2 cm x depth 15.3 cm"
+      },
+      {
+        "@language": "nl",
+        "@value": "hoogte 146 cm x breedte 86,2 cm x diepte 15,3 cm"
+      }
+    ],
+    "identifier": [
+      "SK-A-4022"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/261208",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "paintings"
+          },
+          {
+            "@language": "nl",
+            "@value": "schilderijen"
+          }
+        ]
+      }
+    ],
+    "isReferencedBy": [
+      "Burlington Magazine 75 (1939), p. 83, afb. B.",
+      {
+        "id": "https://id.rijksmuseum.nl/3015253"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/30164222"
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/2204844",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "poplar (wood)"
+          },
+          {
+            "@language": "nl",
+            "@value": "populierenhout"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220968",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "tempera"
+          },
+          {
+            "@language": "nl",
+            "@value": "tempera"
+          }
+        ]
+      }
+    ],
+    "provenance": [
+      {
+        "@language": "en",
+        "@value": "\u2026; sale, Richard von Kaufmann (1850-1908, Berlin), Berlin (Cassirer & Helbing), 4 December 1917 <em>sqq.</em>, no. 49, 15,000, to Carl Moll (1861-1945, Vienna);{Copy RKD; the frame was offered with a painting, Italienischer Meister des 15. Jahrhunderts.}\u2026.; the dealer Kurt Walter Bachstitz, The Hague, 1931;{HNA, SNK Archive, inv. no. 178.} from whom, fl. 70,000, to Hans Posse, for Adolf Hitler\u2019s F\u00fchrermuseum, Linz, through the mediation of the dealer J.G. Wigman, The Hague, 4 May 1944 (inv. no. 3527); war recuperation, SNK, 8 July 1946 (inv. no. NK 1787);{Provenance from 1939 to 1945 reconstructed by Ekkart <em>et al.</em> 2006; MCCP website, file card no. 4691.} transferred from the DRVK, to the museum, 1960"
+      }
+    ],
+    "spatial": [
+      {
+        "id": "https://id.rijksmuseum.nl/230101",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Italy"
+          },
+          {
+            "@language": "nl",
+            "@value": "Itali\u00eb"
+          }
+        ],
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/1000080",
+          "http://www.wikidata.org/entity/Q38"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/2211014",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "11HH(CECILIA)",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/11HH%28CECILIA%29"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "the virgin martyr Cecilia of Rome; possible attributes: falcon, musical instruments, organ, wreath of roses and lilies"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2211276",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "73C121",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/73C121"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "baptism of Christ in the river Jordan: John the Baptist pouring out water on Christ's head: the Holy Ghost descends"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2211580",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "11B3231",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/11B3231"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "God the Father holding the crucifix, 'Gnadenstuhl', Mercy-Seat, Throne of Grace"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221762",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "73A5",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/73A5"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "the announcement of Christ's birth (Luke 1:26-38)"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221906",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "73D14",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/73D14"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "entry into Jerusalem: people spreading their clothes before Christ on the ass, and waving palm branches (Matthew 21:1-11, 21:14-16; Mark 11:1-11; Luke 19:28-40; John 12:12-19)"
+        }
+      }
+    ],
+    "title": {
+      "en": "Frame depicting the Annunciation, Baptism of Christ, Entry into Jerusalem, Saints Cecilia and Catherine of Alexandria, Trinity (Gnadenstuhl, Mercy Seat), and four Music-making Angels",
+      "nl": "Lijst beschilderd met de verkondiging, de doop van Christus, de intocht in Jeruzalem, de heiligen Cecilia en Catharina, de genadestoel en vier musicerende engelen"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/SK-A-4022--b4618fdff0db11f1e2a984392f9e1938",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/HFcCP/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/HFcCP",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/HFcCP/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/HFcCP",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

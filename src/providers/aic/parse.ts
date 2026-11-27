@@ -22,6 +22,22 @@ export function parseAicSearch(data: unknown): AicPage {
   return { total, items: Array.isArray(d.data) ? (d.data as Record<string, unknown>[]) : [] };
 }
 
+/**
+ * Why an artwork isn't a picture to show, or null: a box (classified so,
+ * paintings and prints alike), an album as a whole (classified as one, not as
+ * a leaf: its image is often its cover), and, among paintings and
+ * photographs, an album's or book's cover or binding by its title. A print
+ * made as a cover (Bonnard's "Album Cover for Landscapes and Interiors") is a
+ * print, and stays.
+ */
+export function aicNotAPicture(o: Record<string, unknown>): string | null {
+  const classes = Array.isArray(o.classification_titles) ? o.classification_titles.map((c) => str(c).toLowerCase()) : [];
+  if (classes.includes('box')) return 'a box';
+  if (classes.includes('album/sketchbook') && !classes.includes('album leaf')) return 'an album as a whole';
+  if (str(o.artwork_type_title) !== 'Print' && /\b(album|book|portfolio) cover\b|\bbinding\b/i.test(str(o.title))) return 'a cover or binding';
+  return null;
+}
+
 /** One artwork of a search with the fields asked for (see `AIC_FIELDS`). */
 export function parseAicArtwork(o: Record<string, unknown>): Work {
   const id = str(o.id);
@@ -29,6 +45,8 @@ export function parseAicArtwork(o: Record<string, unknown>): Work {
   if (o.is_public_domain !== true) throw new Unsuitable(`aic ${id}: not in the public domain`);
   const image = str(o.image_id);
   if (!image) throw new Unsuitable(`aic ${id}: no image`);
+  const not = aicNotAPicture(o);
+  if (not) throw new Unsuitable(`aic ${id}: ${not}`);
   const thumb = (o.thumbnail ?? {}) as { width?: unknown; height?: unknown };
   const W = typeof thumb.width === 'number' ? thumb.width : 0;
   const H = typeof thumb.height === 'number' ? thumb.height : 0;

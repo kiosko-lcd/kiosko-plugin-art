@@ -15,7 +15,7 @@
 import { HttpError } from '@kiosko/sdk';
 import { pickIndex } from '../../pick.ts';
 import { remembered, Unsuitable, type ArtProvider } from '../provider.ts';
-import { modernReason, parseNpmManifest, parseNpmSearch } from './parse.ts';
+import { modernReason, notAPicture, parseNpmManifest, parseNpmSearch } from './parse.ts';
 
 export const NPM_SEARCH = 'https://digitalarchive.npm.gov.tw/opendata/Pub/Search';
 export const npmManifestUrl = (id: string, dep: string): string => `https://digitalarchive.npm.gov.tw/Integrate/GetJson?cid=${encodeURIComponent(id)}&dept=${encodeURIComponent(dep)}`;
@@ -45,9 +45,9 @@ export const npm: ArtProvider = {
       ctx.memo.set('npm:painting', undefined);
       throw new Unsuitable(`npm: nothing on page ${page} of ${pages}`);
     }
-    // Recent works (of the Republic, from 1912) are left out by their title already here, saving a request.
-    const older = items.filter((it) => !modernReason(it.title));
-    if (!older.length) throw new Unsuitable(`npm: only recent works on page ${page}`);
+    // Recent works (of the Republic, from 1912), whole albums and sets, boxes are left out by their title already here, saving a request.
+    const older = items.filter((it) => !modernReason(it.title) && !notAPicture(it.title, it.dep));
+    if (!older.length) throw new Unsuitable(`npm: no paintings to show on page ${page}`);
     const item = older[pickIndex(`${seed}|${page}`, older.length, attempt)]!;
     let manifest: unknown;
     try {

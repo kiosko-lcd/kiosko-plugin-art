@@ -1,0 +1,699 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/200106093#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/200106093",
+    "type": "ProvidedCHO",
+    "created": [
+      {
+        "@language": "en",
+        "@value": "1903 - 1907"
+      },
+      {
+        "@language": "nl",
+        "@value": "1903 - 1907"
+      }
+    ],
+    "creator": [
+      {
+        "id": "https://id.rijksmuseum.nl/210640",
+        "type": "edm:Agent",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "Anon"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "anonymous"
+          },
+          {
+            "@language": "nl",
+            "@value": "anoniem"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/100627125",
+          "http://vocab.getty.edu/ulan/500397994",
+          "http://www.wikidata.org/entity/Q4233718",
+          "https://rkd.nl/artists/1984"
+        ]
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/2204250",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "photograph album"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotoalbum"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "nl": "De oliewinning in het voormalige Nederlands-Indi\u00eb was rond 1900 de inzet van felle concurrentie tussen Nederlandse, Engelse en Amerikaanse bedrijven. In 1903 kreeg de Koninklijke Nederlandsche Maatschappij tot Exploitatie van Petroleumbronnen in Nederlands-Indi\u00eb (KNPM, later opgegaan in Koninklijke/Shell) een concessie voor boringen op Borneo. Dit album met 50 foto's is waarschijnlijk aangeboden aan een hoge functionaris van de KNPM bij zijn afscheid. Het was niet ongebruikelijk bij jubileum of afscheid een fotoalbum samen te stellen met foto's van het bedrijf en van het omringende landschap. Dit is een relatief luxueus uitgevoerd album. Voorin staan de namen van de 38 schenkers, waarschijnlijk allen employees van de KNPM."
+    },
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "height 39 cm x width 45 cm x width 95 cm x thickness 7.5 cm"
+      },
+      {
+        "@language": "nl",
+        "@value": "hoogte 39 cm x breedte 45 cm (Gesloten.) x breedte 95 cm (Opengeslagen.) x dikte 7,5 cm"
+      }
+    ],
+    "hasPart": [
+      {
+        "id": "https://id.rijksmuseum.nl/200519575"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519579"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519580"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519581"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519582"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519583"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519585"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519586"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519588"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519589"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519590"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519591"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519592"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519593"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519594"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519597"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519598"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519599"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519600"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519601"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519602"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519603"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519605"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519606"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519609"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519610"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519611"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519612"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519615"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519617"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519618"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519619"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519620"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519623"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519624"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519625"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519626"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519627"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519628"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519629"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519630"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519631"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519632"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519633"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519664"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519665"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519666"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519667"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519669"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200519671"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/200520640"
+      }
+    ],
+    "http://www.europeanafashion.eu/edmfp/technique": [
+      {
+        "id": "https://id.rijksmuseum.nl/2203108",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "binding"
+          },
+          {
+            "@language": "nl",
+            "@value": "boekbinden"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2203119",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "geplakt"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "plakken"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22055",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "photographic processes"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotograferen"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotografisch proced\u00e9"
+          },
+          {
+            "@language": "nl",
+            "@value": "gefotografeerd"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "photography"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotografie"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2206970",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "gelatin silver process"
+          },
+          {
+            "@language": "nl",
+            "@value": "OGZ"
+          },
+          {
+            "@language": "nl",
+            "@value": "bromidedruk"
+          },
+          {
+            "@language": "nl",
+            "@value": "ontwikkel gelatinezilverdruk"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "gelatin silver print"
+          },
+          {
+            "@language": "nl",
+            "@value": "ontwikkelgelatinezilverdruk"
+          }
+        ]
+      }
+    ],
+    "identifier": [
+      "NG-1990-15-A"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260210",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Against Opacity"
+          },
+          {
+            "@language": "nl",
+            "@value": "Against Opacity"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260211",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Indonesian heritage"
+          },
+          {
+            "@language": "nl",
+            "@value": "Indisch erfgoed"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260241",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "biografic"
+          },
+          {
+            "@language": "nl",
+            "@value": "biografisch"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/26192",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "fotoalbums uit Nederlands-Indi\u00eb"
+        }
+      }
+    ],
+    "isReferencedBy": [
+      "'A century of exploration', Exploration Bulletin Special Issue - Shell internationale petroleum maatschappij, Den Haag 1985?, p. 18.",
+      "C. Hoeksma, Schetsen uit de olie, Drukkerij Ruygrok & Co., Batavia 1913.",
+      "De 'koninklijke' : De Geschiedenis van de Koninklijke Nederlandse Maatschappij tot Exloitatie van Petroleumbronnen in Ned. Indi\u00eb vanaf hare oprichting tot heden / Uitg. Willemsen & Co., Rotterdam 1911.",
+      "Documentatiemap.",
+      "Encyclopedie Ned. O.I. deel 3, p. 375.",
+      "J. Thomas Lindblad, 'The petroleum industry in Indonesia before the second world war', Bulletin of Indonesian Economic Studies 25 (aug. 1989) 2, p. 53-77.",
+      {
+        "id": "https://id.rijksmuseum.nl/301148688"
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/22020",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "paper"
+          },
+          {
+            "@language": "nl",
+            "@value": "papier (materiaal)"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22021",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "wood (plant material)"
+          },
+          {
+            "@language": "nl",
+            "@value": "hout"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2202619",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "photographic paper"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotopapier"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "photographic support"
+          },
+          {
+            "@language": "nl",
+            "@value": "fotodrager"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220311",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "velvet (fabric weave)"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours d'Utrecht"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours-chiffon"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "velvet (fabric weave)"
+          },
+          {
+            "@language": "nl",
+            "@value": "fluweel"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220465",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "taffeta"
+          },
+          {
+            "@language": "nl",
+            "@value": "taft"
+          },
+          {
+            "@language": "nl",
+            "@value": "taftzijde"
+          },
+          {
+            "@language": "nl",
+            "@value": "tafzijde"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "taffeta"
+          },
+          {
+            "@language": "nl",
+            "@value": "taf"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22054",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "brass (alloy)"
+          },
+          {
+            "@language": "nl",
+            "@value": "geelkoper"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "brass (alloy)"
+          },
+          {
+            "@language": "nl",
+            "@value": "messing"
+          }
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "id": "https://id.rijksmuseum.nl/23013",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Kalimantan"
+        },
+        "sameAs": [
+          "http://www.wikidata.org/entity/Q3795",
+          "https://sws.geonames.org/1641903/"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/210540",
+        "type": "edm:Agent",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "KNPM"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Koninklijke Nederlandsche Petroleum Maatschappij"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2301663",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Borneo"
+          },
+          {
+            "@language": "nl",
+            "@value": "Borneo"
+          }
+        ],
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/7015963"
+        ]
+      }
+    ],
+    "title": {
+      "nl": "Fotoalbum oliewinning op Borneo"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/NG-1990-15-A--afa076cb13b8111b9debdad2245a2a29",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/zqZco/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/zqZco",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/zqZco/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/zqZco",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

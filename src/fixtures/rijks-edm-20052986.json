@@ -1,0 +1,641 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/20052986#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/20052986",
+    "type": "ProvidedCHO",
+    "created": [
+      {
+        "@language": "en",
+        "@value": "in or after 1725"
+      },
+      {
+        "@language": "nl",
+        "@value": "in of na 1725"
+      }
+    ],
+    "creator": [
+      {
+        "id": "https://id.rijksmuseum.nl/210640",
+        "type": "edm:Agent",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "Anon"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "anonymous"
+          },
+          {
+            "@language": "nl",
+            "@value": "anoniem"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/100627125",
+          "http://vocab.getty.edu/ulan/500397994",
+          "http://www.wikidata.org/entity/Q4233718",
+          "https://rkd.nl/artists/1984"
+        ]
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/220143",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "dekseldoos"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "box"
+          },
+          {
+            "@language": "nl",
+            "@value": "doos"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220344",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "painting"
+          },
+          {
+            "@language": "nl",
+            "@value": "schildering"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "nl": "Ovale doos van tombak, met hieraan deksel met rechthoekig uitstekende scharnier; langs de randen van de doos en deksel zijn profielranden van verguld tombak geklonken; onderzijde en zijkant zijn overtrokken met leer of robbevel. Onderzijde is voorts versierd met gouden nageltjes, langs de rand, en in het midden een versiering vormend van vier in elkaar geslingerde P's met keizerkroon erboven. Op de deksel is voorstelling geschilderd, met allegorie op de dood (van Peter de Grote). Gedateerd. Opschrift."
+    },
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "length 8.6 cm x width 6.2 cm x depth 2.2 cm"
+      },
+      {
+        "@language": "nl",
+        "@value": "lengte 8,6 cm x breedte 6,2 cm x diepte 2,2 cm"
+      }
+    ],
+    "http://id.loc.gov/vocabulary/relators/spn": [
+      {
+        "@language": "en",
+        "@value": "Gift of O. van der Vies"
+      },
+      {
+        "@language": "nl",
+        "@value": "Schenking van de heer O. van der Vies"
+      }
+    ],
+    "http://www.europeanafashion.eu/edmfp/technique": [
+      {
+        "id": "https://id.rijksmuseum.nl/22018",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "nl",
+            "@value": "draaien"
+          },
+          {
+            "@language": "nl",
+            "@value": "gedraaid"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "turning"
+          },
+          {
+            "@language": "nl",
+            "@value": "draaiend bewerken"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2202969",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": {
+          "@language": "nl",
+          "@value": "geklonken"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "riveted"
+          },
+          {
+            "@language": "nl",
+            "@value": "klinken (bevestigen)"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2206730",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "painting technique"
+          },
+          {
+            "@language": "nl",
+            "@value": "schildertechniek"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2206822",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "gild"
+          },
+          {
+            "@language": "nl",
+            "@value": "vergulden"
+          }
+        ]
+      }
+    ],
+    "identifier": [
+      "NG-NM-9425-2"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260241",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "biografic"
+          },
+          {
+            "@language": "nl",
+            "@value": "biografisch"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/261178",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Varia 18e eeuw"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2622326"
+      }
+    ],
+    "isReferencedBy": [
+      "Documentatiemap.",
+      {
+        "id": "https://id.rijksmuseum.nl/301124790"
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/30158118"
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/22011907",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "textile materials"
+          },
+          {
+            "@language": "nl",
+            "@value": "textiel"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2201363",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "tombac (alloy)"
+          },
+          {
+            "@language": "nl",
+            "@value": "tombak"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2201823",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "sealskin"
+          },
+          {
+            "@language": "nl",
+            "@value": "robbenvel"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220184",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "leather"
+          },
+          {
+            "@language": "nl",
+            "@value": "leder"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "leather"
+          },
+          {
+            "@language": "nl",
+            "@value": "leer"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22020",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "paper"
+          },
+          {
+            "@language": "nl",
+            "@value": "papier (materiaal)"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220237",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "gold (metal)"
+          },
+          {
+            "@language": "nl",
+            "@value": "goud"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2207803",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "glass (material)"
+          },
+          {
+            "@language": "nl",
+            "@value": "glas (materiaal)"
+          }
+        ]
+      }
+    ],
+    "relation": [
+      {
+        "id": "https://id.rijksmuseum.nl/20052983"
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/21016386",
+        "type": "edm:Agent",
+        "http://rdvocab.info/ElementsGr2/dateOfBirth": {
+          "@language": "nl",
+          "@value": "ca. 1673"
+        },
+        "http://rdvocab.info/ElementsGr2/dateOfDeath": {
+          "@language": "nl",
+          "@value": "1735"
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfBirth": {
+          "id": "https://id.rijksmuseum.nl/23029985",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Amsterdam"
+            },
+            {
+              "@language": "nl",
+              "@value": "Amsterdam"
+            }
+          ]
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfDeath": {
+          "id": "https://id.rijksmuseum.nl/230666",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Moskou"
+          }
+        },
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "Bidloo, Nicolaas"
+          },
+          {
+            "@language": "nl",
+            "@value": "Bidloo, Nicolaas"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Nicolaas Bidloo"
+          },
+          {
+            "@language": "nl",
+            "@value": "Nicolaas Bidloo"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/250707247",
+          "http://vocab.getty.edu/ulan/500086006",
+          "http://www.wikidata.org/entity/Q2027537",
+          "https://rkd.nl/artists/8103"
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/21044262",
+        "type": "edm:Agent",
+        "http://rdvocab.info/ElementsGr2/dateOfBirth": {
+          "@language": "nl",
+          "@value": "1672-06-09"
+        },
+        "http://rdvocab.info/ElementsGr2/dateOfDeath": {
+          "@language": "nl",
+          "@value": "1725-02-08"
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfBirth": {
+          "id": "https://id.rijksmuseum.nl/230666",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Moskou"
+          }
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfDeath": {
+          "id": "https://id.rijksmuseum.nl/2302424",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Sint-Petersburg"
+          }
+        },
+        "http://rdvocab.info/ElementsGr2/professionOrOccupation": {
+          "id": "https://id.rijksmuseum.nl/2206677",
+          "type": "http://www.w3.org/2004/02/skos/core#Concept",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+              "@language": "en",
+              "@value": "tsar"
+            },
+            {
+              "@language": "nl",
+              "@value": "tsaar"
+            }
+          ]
+        },
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "nl",
+            "@value": "P. Alexewitz prins der Russen Romanov"
+          },
+          {
+            "@language": "nl",
+            "@value": "Peter Romanoff de Grote"
+          },
+          {
+            "@language": "nl",
+            "@value": "Romanov, P. Alexewitz prins der Russen"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Peter I de Grote (tsaar van Rusland)"
+          },
+          {
+            "@language": "nl",
+            "@value": "Peter I de Grote (tsaar van Rusland)"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/30329184",
+          "http://vocab.getty.edu/ulan/500288795",
+          "http://www.wikidata.org/entity/Q8479",
+          "https://rkd.nl/artists/435633"
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2213418",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "42E41",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/42E41"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "mourning customs"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221370",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "48C24",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/48C24"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "piece of sculpture, reproduction of a piece of sculpture"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2215623",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "42E36",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/42E36"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "other memorial structures"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221705",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "92D1916",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/92D1916"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "cupids: 'amores', 'amoretti', 'putti'"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/23014163",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Siberi\u00eb"
+        },
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/7011548",
+          "http://www.wikidata.org/entity/Q5428"
+        ]
+      }
+    ],
+    "title": {
+      "nl": "Doos voor doosje Peter de Grote"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/NG-NM-9425-2--c214d5216bf8356dca189943d403aea2",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/zhOId/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/zhOId",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/zhOId/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/zhOId",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

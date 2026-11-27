@@ -1,0 +1,439 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/200344192#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/200344192",
+    "type": "ProvidedCHO",
+    "created": [
+      {
+        "@language": "en",
+        "@value": "1875 - 1890"
+      },
+      {
+        "@language": "nl",
+        "@value": "1875 - 1890"
+      }
+    ],
+    "creator": [
+      {
+        "id": "https://id.rijksmuseum.nl/21034070",
+        "type": "edm:Agent",
+        "http://rdvocab.info/ElementsGr2/dateOfBirth": {
+          "@language": "nl",
+          "@value": "1837-02-18"
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfBirth": {
+          "id": "https://id.rijksmuseum.nl/2301390",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Dijon"
+          }
+        },
+        "http://rdvocab.info/ElementsGr2/professionOrOccupation": {
+          "id": "https://id.rijksmuseum.nl/2204764",
+          "type": "http://www.w3.org/2004/02/skos/core#Concept",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+              "@language": "en",
+              "@value": "photographer"
+            },
+            {
+              "@language": "nl",
+              "@value": "fotograaf"
+            }
+          ]
+        },
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "Deroche, Mathieu"
+          },
+          {
+            "@language": "en",
+            "@value": "Mathieu Deroche"
+          },
+          {
+            "@language": "nl",
+            "@value": "Deroche, Mathieu"
+          },
+          {
+            "@language": "nl",
+            "@value": "Mathieu Deroche"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Mathieu-Deroche"
+          },
+          {
+            "@language": "nl",
+            "@value": "Mathieu-Deroche"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/312276",
+          "http://vocab.getty.edu/ulan/500105863",
+          "http://www.wikidata.org/entity/Q92278326",
+          "https://rkd.nl/artists/119989"
+        ]
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/2201598",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "etui"
+          },
+          {
+            "@language": "nl",
+            "@value": "etui"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220951",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "photograph"
+          },
+          {
+            "@language": "nl",
+            "@value": "foto"
+          }
+        ]
+      }
+    ],
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "height 63 mm x width 51 mm"
+      },
+      {
+        "@language": "en",
+        "@value": "height 89 mm x width 124 mm x width 176 mm x thickness 19 mm"
+      },
+      {
+        "@language": "nl",
+        "@value": "etui: hoogte 89 mm x breedte 124 mm x breedte 176 mm (opengeklapt) x dikte 19 mm"
+      },
+      {
+        "@language": "nl",
+        "@value": "foto: hoogte 63 mm (met lijst) x breedte 51 mm (met lijst)"
+      }
+    ],
+    "http://www.europeanafashion.eu/edmfp/technique": {
+      "id": "https://id.rijksmuseum.nl/22011481",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2004/02/skos/core#prefLabel": {
+        "@language": "nl",
+        "@value": "emaillefoto"
+      }
+    },
+    "identifier": [
+      "RP-F-F25071-B"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/26150",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "photos"
+          },
+          {
+            "@language": "nl",
+            "@value": "foto's"
+          }
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/22016",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "metal"
+          },
+          {
+            "@language": "nl",
+            "@value": "metaal"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220184",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "leather"
+          },
+          {
+            "@language": "nl",
+            "@value": "leder"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "leather"
+          },
+          {
+            "@language": "nl",
+            "@value": "leer"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/220311",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "velvet (fabric weave)"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours d'Utrecht"
+          },
+          {
+            "@language": "nl",
+            "@value": "velours-chiffon"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "velvet (fabric weave)"
+          },
+          {
+            "@language": "nl",
+            "@value": "fluweel"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22045",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "email"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/22088",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "silk"
+          },
+          {
+            "@language": "nl",
+            "@value": "zijde"
+          }
+        ]
+      }
+    ],
+    "relation": [
+      {
+        "id": "https://id.rijksmuseum.nl/200344281"
+      }
+    ],
+    "spatial": [
+      {
+        "id": "https://id.rijksmuseum.nl/230215",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Paris"
+          },
+          {
+            "@language": "nl",
+            "@value": "Parijs"
+          }
+        ],
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/7008038",
+          "http://www.wikidata.org/entity/Q90"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/221319",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "31D17",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/31D17"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "old woman"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221382",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "61B11",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/61B11"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "anonymous historical person portrayed"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/230215",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Paris"
+          },
+          {
+            "@language": "nl",
+            "@value": "Parijs"
+          }
+        ],
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/7008038",
+          "http://www.wikidata.org/entity/Q90"
+        ]
+      }
+    ],
+    "title": {
+      "nl": "Portret van een onbekende oude vrouw in etui"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/RP-F-F25071-B--b4c74c5847443752d5bbea1654dc5e8d",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/AgCJF/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/AgCJF",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/AgCJF/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/AgCJF",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

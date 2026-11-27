@@ -3,15 +3,15 @@ import assert from 'node:assert/strict';
 import { HttpError } from '@kiosko/sdk';
 import { fakeNet, fixture, fixtureText } from '../fixtures.ts';
 import { imageUrls } from '../image.ts';
-import { aic, aicPlan, aicQuery, AIC_USER_AGENT } from './aic/index.ts';
-import { parseAicArtwork, parseAicSearch } from './aic/parse.ts';
+import { aic, AIC_FIELDS, aicPlan, aicQuery, AIC_USER_AGENT } from './aic/index.ts';
+import { aicNotAPicture, parseAicArtwork, parseAicSearch } from './aic/parse.ts';
 import { met, metSearchUrl } from './met/index.ts';
-import { parseMetObject, parseMetSearch } from './met/parse.ts';
+import { metNotAPicture, parseMetObject, parseMetSearch } from './met/parse.ts';
 import { npm } from './npm/index.ts';
-import { chineseNumber, modernReason, NPM_CREDIT, parseNpmManifest, parseNpmSearch } from './npm/parse.ts';
-import { Unsuitable, type Memo } from './provider.ts';
+import { chineseNumber, isHandscroll, modernReason, notAPicture, NPM_CREDIT, parseNpmManifest, parseNpmSearch } from './npm/parse.ts';
+import { str, Unsuitable, type Memo } from './provider.ts';
 import { rijks, RIJKS_PERIODS, rijksRecordUrl } from './rijks/index.ts';
-import { parseIiifInfo, parseRijksEdm, parseRijksSearch } from './rijks/parse.ts';
+import { parseIiifInfo, parseRijksEdm, parseRijksSearch, rijksNotAPicture } from './rijks/parse.ts';
 
 const memo = (): Memo & { m: Record<string, unknown> } => {
   const m: Record<string, unknown> = {};
@@ -197,4 +197,103 @@ test('npm: a work whose manifest is not JSON is skipped, not a failed day; the s
     throw new HttpError('HTTP 503', { status: 503, url });
   });
   await assert.rejects(npm.pick('painting', 's', 0, { net: down, memo: memo(), now: NOW }), (e) => !(e instanceof Unsuitable));
+});
+
+test('npm: never a box, a cover or an album as a whole (real records)', () => {
+  // 妙境常新 冊: a piece of a curio cabinet, its first views a brown box with a catalogue label.
+  assert.throws(() => parseNpmManifest(fixture('npm-manifest-62013.json'), '62013', 'U'), (e) => e instanceof Unsuitable && /curio cabinet/.test(e.message));
+  // An album as a whole: its views are the title pages and colophons (A01…, B01…); its leaves are entries of their own.
+  assert.throws(() => parseNpmManifest(fixture('npm-manifest-4287.json'), '4287', 'P'), (e) => e instanceof Unsuitable && /album as a whole/.test(e.message));
+  // A set of four hanging scrolls as a whole: its views are its box.
+  assert.throws(() => parseNpmManifest(fixture('npm-manifest-29105.json'), '29105', 'P'), (e) => e instanceof Unsuitable && /set as a whole/.test(e.message));
+  // One of the album's leaves is a painting.
+  const leaf = parseNpmManifest(fixture('npm-manifest-4288.json'), '4288', 'P');
+  assert.ok(leaf.image.type === 'iiif' && leaf.image.base.endsWith('N000000001PAA'));
+  // Handscrolls: their views in the order they were taken (some manifests list them backwards, the scroll rolled
+  // up or its wrapper first), and a section a third of the way in, past the wrapper and title, before the colophons.
+  const base = (w: ReturnType<typeof parseNpmManifest>) => (w.image.type === 'iiif' ? w.image.base : '');
+  const first = (f: string) => str((fixture(f) as { sequences: { canvases: { label: string }[] }[] }).sequences[0]!.canvases[0]!.label);
+  assert.match(first('npm-manifest-5722.json'), /PAF$/, 'listed backwards, the rolled-up scroll first');
+  assert.match(base(parseNpmManifest(fixture('npm-manifest-5722.json'), '5722', 'P')), /N000000000PAB$/);
+  // 百老共祝圖: 21 sections, the first four its yellow silk wrapper and blanks, the last the wrapper again.
+  assert.match(first('npm-manifest-14887.json'), /SDAAA$/, 'and a whole-length strip, too long for a panel');
+  assert.match(base(parseNpmManifest(fixture('npm-manifest-14887.json'), '14887', 'P')), /N000000000PAG$/);
+  assert.equal(isHandscroll('明陳洪綬百老共祝圖　卷'), true);
+  assert.equal(isHandscroll('五代梁荊浩匡廬圖　軸'), false);
+  assert.equal(isHandscroll('明卞文瑜摹古山水　冊　倣方方壺奇峰白雲'), false);
+  // Front and back matter (A01, B01: writing) aren't shown even in a work that is otherwise a picture.
+  const fm = structuredClone(fixture('npm-manifest-4287.json')) as { metadata: { label: string; value: string }[] };
+  fm.metadata[0]!.value = '明卞文瑜摹古山水　冊　倣方方壺奇峰白雲';
+  assert.throws(() => parseNpmManifest(fm, '4287', 'P'), (e) => e instanceof Unsuitable && /no image of the painting/.test(e.message));
+
+  // By title (and department) alone.
+  assert.match(notAPicture('妙境常新 冊', 'U')!, /curio/);
+  assert.match(notAPicture('明卞文瑜摹古山水　冊', 'P')!, /album/);
+  assert.match(notAPicture('清彭玉麐梅花四屏　軸', 'P')!, /set/);
+  assert.match(notAPicture('清人書畫　函', 'P')!, /box/);
+  assert.equal(notAPicture('明卞文瑜摹古山水　冊　倣方方壺奇峰白雲', 'P'), null);
+  assert.equal(notAPicture('清彭玉麐梅花四屏　軸　之一', 'P'), null);
+  assert.equal(notAPicture('民國俞原山水四屏　軸　（一）', 'P'), null);
+  assert.equal(notAPicture('清王翬擬古山水畫冊　冊　山村對話', 'P'), null);
+  assert.equal(notAPicture('五代梁荊浩匡廬圖　軸', 'P'), null);
+  assert.equal(notAPicture('清姚文瀚畫雪浦探梅　卷', 'P'), null);
+});
+
+test('npm: a pick leaves out curio-cabinet pieces and whole albums by their title, without asking for them', async () => {
+  for (const [file, ok] of [
+    ['npm-search-882.html', ['13666']],
+    ['npm-search-120.html', ['4280', '4281', '4282', '4283', '4284', '4285', '4286', '4288', '4289', '4290', '4291', '4292', '4293', '4294']],
+  ] as const) {
+    const net = fakeNet(({ kind }) => (kind === 'text' ? fixtureText(file) : fixture('npm-manifest-4288.json')));
+    for (let a = 0; a < 30; a++) await npm.pick('painting', `s${a}`, 0, { net, memo: memo(), now: NOW }).catch(() => {});
+    const asked = net.calls.filter((c) => c.kind === 'json').map((c) => /cid=(\d+)/.exec(c.url)![1]!);
+    assert.ok(asked.length > 0, file);
+    for (const id of asked) assert.ok((ok as readonly string[]).includes(id), `${file}: asked for ${id}`);
+  }
+});
+
+test('met: frames, albums, cases and book covers are left out; a print made as a cover stays (real records)', () => {
+  const out: [string, RegExp][] = [
+    ['met-object-189655.json', /frame/], // European Paintings' frame
+    ['met-object-286154.json', /album/], // a photograph album: its velvet binding
+    ['met-object-646672.json', /album/], // a print album: its cover
+    ['met-object-631212.json', /equipment/], // a Claude glass in its leather case
+    ['met-object-824560.json', /decorative paper/], // a paste-paper book cover
+  ];
+  for (const [file, why] of out) {
+    assert.throws(() => parseMetObject(fixture(file)), (e) => e instanceof Unsuitable && why.test(e.message), file);
+    assert.ok(metNotAPicture(fixture(file) as Record<string, unknown>), file);
+  }
+  assert.equal(parseMetObject(fixture('met-object-334108.json')).title, 'Elles (portfolio cover)');
+  assert.equal(metNotAPicture(fixture('met-object-437300.json') as Record<string, unknown>), null);
+});
+
+test('aic: boxes, albums, covers and bindings are left out; a printed cover and a painting in its frame stay (real records)', () => {
+  const items = new Map(parseAicSearch(fixture('aic-artworks-objects.json')).items.map((o) => [String(o.id), o]));
+  for (const [id, why] of [
+    ['23529', /box/], // Box with Painted Lid
+    ['61598', /box/], // Box with accordion book (prints)
+    ['12512', /album/], // Auld Lang Syne Album: its cloth cover
+    ['105932', /cover/], // Album Cover for Collection of Ship paintings: a plain blue cover
+    ['88258', /binding/], // Book Binding
+  ] as const) {
+    assert.throws(() => parseAicArtwork(items.get(id)!), (e) => e instanceof Unsuitable && why.test(e.message), id);
+  }
+  assert.equal(parseAicArtwork(items.get('22708')!).title, 'Album Cover for Landscapes and Interiors');
+  assert.equal(parseAicArtwork(items.get('234877')!).title, 'Ad Astra');
+  assert.equal(aicNotAPicture(parseAicSearch(fixture('aic-search-417.json')).items[0]!), null);
+  assert.ok(AIC_FIELDS.includes('classification_titles'), 'asked for with each pick');
+});
+
+test('rijks: frames, boxes, cases, photograph albums and book covers are left out (real records)', () => {
+  for (const [id, why] of [
+    ['20028306', /frame/], // a painting's frame (dcType painting and frame)
+    ['20052986', /box/], // a painted box
+    ['200106093', /photograph album/], // its velvet cover
+    ['200344192', /etui/], // a photograph in its case
+    ['200117739', /book cover/], // a printed book cover
+  ] as const) {
+    assert.throws(() => parseRijksEdm(fixture(`rijks-edm-${id}.json`)), (e) => e instanceof Unsuitable && why.test(e.message), id);
+  }
+  assert.equal(rijksNotAPicture((fixture('rijks-edm-200100988.json') as { aggregatedCHO: Record<string, unknown> }).aggregatedCHO), null);
 });

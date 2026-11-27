@@ -39,6 +39,29 @@ export function langValue(v: unknown): string {
 const PREF = 'http://www.w3.org/2004/02/skos/core#prefLabel';
 
 /**
+ * Object types (English or Dutch, as its records give them) of what holds,
+ * binds or frames pictures rather than being one: frames, boxes, cases,
+ * photograph albums and scrapbooks, wrappers and book covers.
+ */
+const NOT_PICTURES = new Set(['frame', 'lijst', 'box', 'doos', 'etui', 'case', 'cassette', 'photograph album', 'fotoalbum', 'album', 'scrapbook', 'plakboek', 'wrapper', 'omslag', 'book cover', 'boekband', 'binding', 'bookbinding']);
+
+/** The labels of every type of an object, in any language. */
+function typeLabels(cho: Record<string, any>): string[] {
+  const types = (Array.isArray(cho.dcType) ? cho.dcType : cho.dcType ? [cho.dcType] : []) as Record<string, unknown>[];
+  return types.flatMap((t) => {
+    const l = t?.[PREF];
+    const ls = (Array.isArray(l) ? l : [l]) as unknown[];
+    return ls.map((x) => (typeof x === 'string' ? x : str((x as Lang)?.['@value'])).toLowerCase()).filter(Boolean);
+  });
+}
+
+/** Why a Rijksmuseum object isn't a picture to show (from its types), or null. */
+export function rijksNotAPicture(cho: Record<string, any>): string | null {
+  const hit = typeLabels(cho).find((t) => NOT_PICTURES.has(t));
+  return hit ? `a ${hit}` : null;
+}
+
+/**
  * An object's record in the EDM profile (`?_profile=edm-framed`): the work,
  * if its image is in the public domain or CC0, with its IIIF service (whose
  * size `iiifInfo` reads).
@@ -50,6 +73,8 @@ export function parseRijksEdm(data: unknown): Omit<Work, 'image'> & { service: s
   if (!id) throw new Unsuitable('rijks: not an object');
   const license = RIJKS_OPEN[str(d.edmRights)];
   if (!license) throw new Unsuitable(`rijks ${id}: image rights ${str(d.edmRights) || 'unknown'}`);
+  const not = rijksNotAPicture(cho);
+  if (not) throw new Unsuitable(`rijks ${id}: ${not}`);
   const shown = (d.isShownBy ?? d.object ?? {}) as Record<string, any>;
   const service = str(shown['http://rdfs.org/sioc/services#has_service']?.id);
   if (!service) throw new Unsuitable(`rijks ${id}: no IIIF image`);
