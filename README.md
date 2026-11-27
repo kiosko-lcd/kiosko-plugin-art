@@ -115,6 +115,19 @@ by any of them. See NOTICE.
   bands along its edges that are mostly neutral or pure patches of colour,
   with a ramp or three hues in them, are cut off. Painted silk and paper are
   tinted, so the work itself stays whole.
+- **A picture, not what holds it**: frames, boxes, cases, album covers and
+  bindings are left out by the museums' own data: the Met's object name and
+  classification, the Art Institute's classifications (and, for paintings
+  and photographs, a cover or binding in the title), the Rijksmuseum's
+  object types. At the National Palace Museum an album, or a set of
+  scrolls, as a whole (its leaves and parts are works of their own), and
+  the pieces of its curio cabinets, are left out by their title and
+  department before their record is asked for; of a work's photographs, its
+  title and colophon pages are skipped, they are taken in the order they
+  were photographed (some records list them backwards, the scroll rolled up
+  first), and of a handscroll, whose first sections are often its silk
+  wrapper and title and its last ones the colophons and box, the section a
+  third of the way in is shown.
 - **Politely**: once a work is in, the museum isn't asked again until the
   next day (or slot). Its record and image are kept in the plugin's data
   folder (the images of the last two works: a few hundred KB, a few MB for a Met original). How many works

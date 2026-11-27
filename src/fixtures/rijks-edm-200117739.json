@@ -1,0 +1,398 @@
+{
+  "@context": "https://www.europeana.eu/schemas/context/edm.jsonld",
+  "id": "https://id.rijksmuseum.nl/200117739#aggregation",
+  "type": "Aggregation",
+  "aggregatedCHO": {
+    "id": "https://id.rijksmuseum.nl/200117739",
+    "type": "ProvidedCHO",
+    "alternative": {
+      "nl": "Paris qui rit!"
+    },
+    "created": [
+      {
+        "@language": "en",
+        "@value": "1886"
+      },
+      {
+        "@language": "nl",
+        "@value": "1886"
+      }
+    ],
+    "creator": [
+      {
+        "id": "https://id.rijksmuseum.nl/2105504",
+        "type": "edm:Agent",
+        "http://rdvocab.info/ElementsGr2/dateOfBirth": {
+          "@language": "nl",
+          "@value": "1836-06-01"
+        },
+        "http://rdvocab.info/ElementsGr2/dateOfDeath": {
+          "@language": "nl",
+          "@value": "1932-09-23"
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfBirth": {
+          "id": "https://id.rijksmuseum.nl/230215",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": [
+            {
+              "@language": "en",
+              "@value": "Paris"
+            },
+            {
+              "@language": "nl",
+              "@value": "Parijs"
+            }
+          ],
+          "sameAs": [
+            "http://vocab.getty.edu/tgn/7008038",
+            "http://www.wikidata.org/entity/Q90"
+          ]
+        },
+        "http://rdvocab.info/ElementsGr2/placeOfDeath": {
+          "id": "https://id.rijksmuseum.nl/230711",
+          "type": "edm:Place",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": {
+            "@language": "nl",
+            "@value": "Nice"
+          }
+        },
+        "http://rdvocab.info/ElementsGr2/professionOrOccupation": [
+          {
+            "id": "https://id.rijksmuseum.nl/2202217",
+            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
+              {
+                "@language": "en",
+                "@value": "painter"
+              },
+              {
+                "@language": "nl",
+                "@value": "schilder"
+              }
+            ]
+          },
+          {
+            "id": "https://id.rijksmuseum.nl/2202348",
+            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "http://www.w3.org/2004/02/skos/core#prefLabel": [
+              {
+                "@language": "en",
+                "@value": "printmaker"
+              },
+              {
+                "@language": "nl",
+                "@value": "prentmaker"
+              }
+            ]
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#altLabel": [
+          {
+            "@language": "en",
+            "@value": "Ch\u00e9ret, Jules"
+          },
+          {
+            "@language": "nl",
+            "@value": "Ch\u00e9ret, Jules"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Jules Ch\u00e9ret"
+          },
+          {
+            "@language": "nl",
+            "@value": "Jules Ch\u00e9ret"
+          }
+        ],
+        "sameAs": [
+          "http://viaf.org/viaf/61682584",
+          "http://vocab.getty.edu/ulan/500030480",
+          "http://www.wikidata.org/entity/Q610202",
+          "https://rkd.nl/artists/16577"
+        ]
+      }
+    ],
+    "dcType": [
+      {
+        "id": "https://id.rijksmuseum.nl/22040",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "print"
+          },
+          {
+            "@language": "nl",
+            "@value": "prent"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/2204292",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "book cover"
+          },
+          {
+            "@language": "nl",
+            "@value": "boekomslag"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "nl": "Een bont gezelschap bestaande uit een dame met twee hoedendozen en een springend klein kind, een lachende koetsier met zweep in de hand, een man die achterover valt, een meisjeskopje en de kop van een krantlezende man, en linksachter drie dansende figuren."
+    },
+    "edmType": "IMAGE",
+    "extent": [
+      {
+        "@language": "en",
+        "@value": "height 338 mm x width 440 mm"
+      },
+      {
+        "@language": "nl",
+        "@value": "blad: hoogte 338 mm x breedte 440 mm"
+      }
+    ],
+    "http://id.loc.gov/vocabulary/relators/spn": [
+      {
+        "@language": "en",
+        "@value": "Gift of O.B. de Kat, Laren"
+      },
+      {
+        "@language": "nl",
+        "@value": "Schenking van de heer O.B. de Kat, Laren"
+      }
+    ],
+    "http://www.europeanafashion.eu/edmfp/technique": {
+      "id": "https://id.rijksmuseum.nl/2202247",
+      "type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2004/02/skos/core#altLabel": [
+        {
+          "@language": "nl",
+          "@value": "kleurensteendruk (proced\u00e9)"
+        },
+        {
+          "@language": "nl",
+          "@value": "lithografie in kleuren"
+        }
+      ],
+      "http://www.w3.org/2004/02/skos/core#prefLabel": [
+        {
+          "@language": "en",
+          "@value": "color lithography"
+        },
+        {
+          "@language": "nl",
+          "@value": "kleurenlithografie (proced\u00e9)"
+        }
+      ]
+    },
+    "identifier": [
+      "RP-P-1992-432"
+    ],
+    "isPartOf": [
+      {
+        "id": "https://id.rijksmuseum.nl/260238",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Alleen beeld"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260239",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "nl",
+          "@value": "Entire Public Domain Set"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/260251",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "All published objects"
+          },
+          {
+            "@language": "nl",
+            "@value": "Alle gepubliceerde objecten"
+          }
+        ]
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/26151",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#broader": {
+          "id": "https://linked.art/ns/terms/Set"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "prints"
+          },
+          {
+            "@language": "nl",
+            "@value": "prenten"
+          }
+        ]
+      }
+    ],
+    "isReferencedBy": [
+      "IFF",
+      {
+        "id": "https://id.rijksmuseum.nl/30171097"
+      }
+    ],
+    "medium": [
+      {
+        "id": "https://id.rijksmuseum.nl/22020",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "paper"
+          },
+          {
+            "@language": "nl",
+            "@value": "papier (materiaal)"
+          }
+        ]
+      }
+    ],
+    "spatial": [
+      {
+        "id": "https://id.rijksmuseum.nl/230215",
+        "type": "edm:Place",
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@language": "en",
+            "@value": "Paris"
+          },
+          {
+            "@language": "nl",
+            "@value": "Parijs"
+          }
+        ],
+        "sameAs": [
+          "http://vocab.getty.edu/tgn/7008038",
+          "http://www.wikidata.org/entity/Q90"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "id": "https://id.rijksmuseum.nl/221143",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "43C9",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/43C9"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "dancing"
+        }
+      },
+      {
+        "id": "https://id.rijksmuseum.nl/221443",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "http://www.w3.org/2004/02/skos/core#altLabel": "43A3",
+        "http://www.w3.org/2004/02/skos/core#exactMatch": {
+          "id": "https://iconclass.org/43A3"
+        },
+        "http://www.w3.org/2004/02/skos/core#prefLabel": {
+          "@language": "en",
+          "@value": "pleasure fair and circus"
+        }
+      }
+    ],
+    "title": {
+      "nl": "Omslag van het boek Paris qui rit van Georges Duval"
+    }
+  },
+  "dataProvider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  },
+  "edmRights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "isShownAt": {
+    "id": "https://www.rijksmuseum.nl/nl/collectie/object/RP-P-1992-432--aec94435928d96e191d59b0680230565",
+    "type": "WebResource",
+    "dcType": [
+      {
+        "id": "http://purl.org/dc/dcmitype/InteractiveResource"
+      }
+    ],
+    "format": [
+      "text/html"
+    ],
+    "language": [
+      "nl"
+    ]
+  },
+  "isShownBy": {
+    "id": "https://iiif.micr.io/prMYg/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/prMYg",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "object": {
+    "id": "https://iiif.micr.io/prMYg/full/max/0/default.jpg",
+    "type": "WebResource",
+    "http://rdfs.org/sioc/services#has_service": {
+      "id": "https://iiif.micr.io/prMYg",
+      "type": "http://rdfs.org/sioc/services#Service",
+      "conformsTo": [
+        {
+          "id": "http://iiif.io/api/image"
+        }
+      ]
+    }
+  },
+  "provider": {
+    "id": "https://id.rijksmuseum.nl/2109266",
+    "type": "edm:Agent",
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rijksmuseum Amsterdam"
+      },
+      {
+        "@language": "nl",
+        "@value": "Rijksmuseum Amsterdam"
+      }
+    ]
+  }
+}

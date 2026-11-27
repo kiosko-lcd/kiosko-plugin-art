@@ -20,7 +20,7 @@ import { parseAicArtwork, parseAicSearch } from './parse.ts';
 export const AIC_SEARCH = 'https://api.artic.edu/api/v1/artworks/search';
 /** Its "artwork type" ids: Painting, Photograph, Print. */
 export const AIC_TYPES: Record<Kind, number> = { painting: 1, photograph: 2, print: 18 };
-export const AIC_FIELDS = ['id', 'title', 'artist_display', 'artist_title', 'date_display', 'image_id', 'is_public_domain', 'thumbnail', 'artwork_type_title'];
+export const AIC_FIELDS = ['id', 'title', 'artist_display', 'artist_title', 'date_display', 'image_id', 'is_public_domain', 'thumbnail', 'artwork_type_title', 'classification_titles'];
 /** The furthest its search pages. */
 export const AIC_WINDOW = 1000;
 /** Who is asking, as its docs request (the project and a way to reach it). */

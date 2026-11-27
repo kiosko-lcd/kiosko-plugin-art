@@ -54,6 +54,58 @@ export function modernReason(...texts: string[]): string | null {
 }
 
 /**
+ * Words for a work's format, written after its title: 軸 hanging scroll, 卷
+ * handscroll, 冊 album, 冊頁 album leaf, fans, a single sheet…
+ */
+const FORMAT = /^(軸|卷|冊|冊頁|手卷|扇面|摺扇|成扇|團扇|紈扇|橫披|單片|貼落|屏|對聯)$/;
+/** Words for what holds a work rather than the work: a case, a box. */
+const CONTAINER = /^(函|盒|匣|箱|囊|套|書函|錦函|木匣|木盒|畫匣|畫盒)$/;
+
+/**
+ * Why a catalogue entry of the National Palace Museum isn't a picture to
+ * show, or null. From its title and department alone, so a pick can leave it
+ * out before asking for its manifest:
+ *
+ * - an album as a whole (a title ending in 冊, with no leaf after it): its
+ *   leaves are entries of their own (`…　冊　白鵝`), and the album's own views
+ *   are its box, covers, endpapers, title pages and colophons;
+ * - a set as a whole (`…四屏　軸`, with no `之一` or `（一）` after it): its
+ *   parts are entries of their own, and the set's views are its box;
+ * - a box or case (函, 匣, 盒…);
+ * - the pieces of the curio cabinets (department `U`, as `妙境常新 冊`):
+ *   photographed as objects, their first views are a box with a catalogue
+ *   label, and which of the next ones are paintings isn't told.
+ */
+export function notAPicture(title: string, dep: string): string | null {
+  if (dep === 'U') return 'a piece of a curio cabinet, photographed in its box';
+  const { parts, format, at } = titleParts(title);
+  if (parts.some((p) => CONTAINER.test(p))) return 'a box or case';
+  // No format word, or something after it (a leaf's or part's name, 之一, （一）): one picture.
+  if (!format || at < parts.length - 1) return null;
+  if (format === '冊') return 'an album as a whole (its box, covers and colophons; its leaves are entries of their own)';
+  if (/[二三四五六七八九十]+[屏條幅]/.test(parts.slice(0, at).join(''))) return 'a set as a whole (its box; its parts are entries of their own)';
+  return null;
+}
+
+/** A title's words (apart at spaces, ideographic ones too), and its last format word (軸, 卷, 冊…) and where it is. */
+function titleParts(title: string): { parts: string[]; format: string; at: number } {
+  const parts = title.trim().split(/[\s\u3000]+/).filter(Boolean);
+  const at = parts.findLastIndex((p) => FORMAT.test(p));
+  return { parts, format: at < 0 ? '' : parts[at]!, at };
+}
+
+/** A handscroll (卷), photographed in sections from its start. */
+export const isHandscroll = (title: string): boolean => /^(卷|手卷)$/.test(titleParts(title).format);
+
+/**
+ * A view's image name ends in the work's number, then three characters for
+ * what the view shows (`000` the work, `001`… a leaf, `A01`… the front
+ * matter, `B01`… the back matter: title pages and colophons, writing), then
+ * the photograph (`PAA`, `PAB`…, on to `PBA`).
+ */
+const FRONT_OR_BACK = /N\d{6}[A-Z]\d{2}[A-Z]{3,}$/;
+
+/**
  * A page of its open-data search (`/opendata/Pub/Search`, HTML): the works'
  * ids and departments, and how many pages there are.
  */
@@ -73,6 +125,7 @@ export function parseNpmSearch(html: string): { pages: number; items: { id: stri
 }
 
 interface Canvas {
+  label?: unknown;
   width?: unknown;
   height?: unknown;
   images?: { resource?: { service?: { '@id'?: unknown } } }[];
@@ -81,7 +134,9 @@ interface Canvas {
 /**
  * A IIIF manifest (`/Integrate/GetJson?cid=…&dept=…`): the work, with the
  * first view of it whose shape suits a panel (a hanging scroll's whole view
- * rather than a long detail; an album's first leaf).
+ * rather than a long detail; an album's first leaf; a handscroll's section a
+ * third of the way in). Entries that aren't a
+ * picture (`notAPicture`) and views of the front and back matter are left out.
  */
 export function parseNpmManifest(data: unknown, id: string, dep: string): Work {
   const d = (data ?? {}) as { label?: unknown; metadata?: { label?: unknown; value?: unknown }[]; sequences?: { canvases?: Canvas[] }[] };
@@ -93,10 +148,18 @@ export function parseNpmManifest(data: unknown, id: string, dep: string): Work {
   // Works of the Republic (民國, from 1912) may still be in copyright abroad (life + 70): only older ones.
   const modern = modernReason(time, zh, en, ...meta.values());
   if (modern) throw new Unsuitable(`npm ${dep}${id}: ${modern}`);
-  const canvases = (d.sequences?.[0]?.canvases ?? []).map((c) => ({ w: Number(c.width), h: Number(c.height), service: str(c.images?.[0]?.resource?.service?.['@id']) })).filter((c) => c.w > 0 && c.h > 0 && c.service);
-  if (!canvases.length) throw new Unsuitable(`npm ${dep}${id}: no image`);
-  const fits = (c: { w: number; h: number }) => Math.max(c.w / c.h, c.h / c.w) <= MAX_ASPECT;
-  const view = canvases.find(fits) ?? canvases[0]!;
+  const not = notAPicture(zh, dep);
+  if (not) throw new Unsuitable(`npm ${dep}${id}: ${not}`);
+  const canvases = (d.sequences?.[0]?.canvases ?? [])
+    .map((c) => ({ label: str(c.label), w: Number(c.width), h: Number(c.height), service: str(c.images?.[0]?.resource?.service?.['@id']) }))
+    .filter((c) => c.w > 0 && c.h > 0 && c.service && !FRONT_OR_BACK.test(c.label))
+    // In the order they were photographed (PAA first): some manifests list them backwards, ending with the work rolled up.
+    .sort((a, b) => (a.label < b.label ? -1 : a.label > b.label ? 1 : 0));
+  if (!canvases.length) throw new Unsuitable(`npm ${dep}${id}: no image of the painting`);
+  const fits = canvases.filter((c) => Math.max(c.w / c.h, c.h / c.w) <= MAX_ASPECT);
+  // A handscroll's first sections are often its silk wrapper, a blank or its title, and its last ones the
+  // colophons and its box: a third of the way in is the painting.
+  const view = (isHandscroll(zh) ? fits[Math.floor((fits.length - 1) / 3)] : fits[0]) ?? canvases[0]!;
   return {
     provider: 'npm',
     id: `${dep}${id}`,

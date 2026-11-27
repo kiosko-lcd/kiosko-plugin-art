@@ -1,0 +1,135 @@
+{
+ "@context": "https://iiif.io/api/presentation/2/context.json",
+ "@id": "https://digitalarchive.npm.gov.tw/Integrate/GetJson?cid=4287&dept=P&imageName=",
+ "@type": "sc:Manifest",
+ "label": "NPM 故宮 - 明卞文瑜摹古山水　冊",
+ "logo": "https://www.npm.gov.tw/images/favicon/apple-icon-57x57.png",
+ "metadata": [
+  {
+   "label": "Chinese Title",
+   "value": "明卞文瑜摹古山水　冊"
+  },
+  {
+   "label": "Time",
+   "value": null
+  }
+ ],
+ "rendering": [
+  {
+   "@id": "https://digitalarchive.npm.gov.tw/Collection/Detail?id=4287&dep=P",
+   "format": "text/html",
+   "label": "DigitalArchives"
+  },
+  {
+   "@id": "https://digitalarchive.npm.gov.tw/Integrate/IIIFViewer?id=4287&dep=P&imageName=",
+   "format": "text/html",
+   "label": "IIIF Viewer"
+  }
+ ],
+ "license": "https://data.gov.tw/license",
+ "viewingDirection": "left-to-right",
+ "viewingHint": null,
+ "sequences": [
+  {
+   "@type": "sc:Sequence",
+   "canvases": [
+    {
+     "label": "K2A001160N000000A01PAA",
+     "@id": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A01PAA",
+     "@type": "sc:Canvas",
+     "height": "749",
+     "width": "1000",
+     "images": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Annotation/K2A001160N000000A01PAA",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "on": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A01PAA",
+       "resource": {
+        "description": "",
+        "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A01PAA/full/,300/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "service": {
+         "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A01PAA",
+         "@context": "https://iiif.io/api/image/2/context.json",
+         "profile": "https://iiif.io/api/image/2/level1.json"
+        }
+       }
+      }
+     ],
+     "otherContent": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Integrate/GetJsonOtherContent?server=iiifod&n1=K2A&item=K2A001160N000000A01PAA&ObjectID=4287&Dept=P",
+       "@type": "sc:AnnotationList"
+      }
+     ]
+    },
+    {
+     "label": "K2A001160N000000A01PAB",
+     "@id": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A01PAB",
+     "@type": "sc:Canvas",
+     "height": "749",
+     "width": "993",
+     "images": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Annotation/K2A001160N000000A01PAB",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "on": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A01PAB",
+       "resource": {
+        "description": "",
+        "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A01PAB/full/,300/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "service": {
+         "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A01PAB",
+         "@context": "https://iiif.io/api/image/2/context.json",
+         "profile": "https://iiif.io/api/image/2/level1.json"
+        }
+       }
+      }
+     ],
+     "otherContent": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Integrate/GetJsonOtherContent?server=iiifod&n1=K2A&item=K2A001160N000000A01PAB&ObjectID=4287&Dept=P",
+       "@type": "sc:AnnotationList"
+      }
+     ]
+    },
+    {
+     "label": "K2A001160N000000A02PAA",
+     "@id": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A02PAA",
+     "@type": "sc:Canvas",
+     "height": "749",
+     "width": "1000",
+     "images": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Annotation/K2A001160N000000A02PAA",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "on": "https://digitalarchive.npm.gov.tw/Canvas/K2A001160N000000A02PAA",
+       "resource": {
+        "description": "",
+        "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A02PAA/full/,300/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "service": {
+         "@id": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A001160N000000A02PAA",
+         "@context": "https://iiif.io/api/image/2/context.json",
+         "profile": "https://iiif.io/api/image/2/level1.json"
+        }
+       }
+      }
+     ],
+     "otherContent": [
+      {
+       "@id": "https://digitalarchive.npm.gov.tw/Integrate/GetJsonOtherContent?server=iiifod&n1=K2A&item=K2A001160N000000A02PAA&ObjectID=4287&Dept=P",
+       "@type": "sc:AnnotationList"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -19,6 +19,22 @@ function aspectOf(o: Record<string, unknown>): number | undefined {
 }
 
 export const MET_MUSEUM = 'The Met';
+
+/**
+ * Object names and classifications of what holds, binds or frames pictures
+ * rather than being one: a frame (European Paintings has one), albums (their
+ * image is the binding), a Claude glass in its case, paste-paper book covers.
+ * A print made as a cover ("Elles (portfolio cover)") is a print, and stays.
+ */
+const NOT_A_PICTURE = /\b(frames?|albums?|bindings?|bookbindings?|book ?covers?|cases?|box(es)?|equipment|decorative paper)\b/i;
+
+/** Why a Met object isn't a picture to show (from its object name and classification), or null. */
+export function metNotAPicture(o: Record<string, unknown>): string | null {
+  for (const v of [str(o.objectName), str(o.classification)]) {
+    if (NOT_A_PICTURE.test(v)) return `not a picture but ${v.toLowerCase()}`;
+  }
+  return null;
+}
 /** The original's long edge isn't given: a number past any panel (and that survives JSON, unlike Infinity). */
 export const ORIGINAL_PX = 100_000;
 
@@ -34,6 +50,8 @@ export function parseMetObject(data: unknown): Work {
   const small = str(o.primaryImageSmall);
   const large = str(o.primaryImage);
   if (!small && !large) throw new Unsuitable(`met ${id}: no image`);
+  const not = metNotAPicture(o);
+  if (not) throw new Unsuitable(`met ${id}: ${not}`);
   const prefix = str(o.artistPrefix);
   const name = str(o.artistDisplayName);
   const artist = name ? (prefix ? `${prefix} ${name}` : name) : str(o.culture);
