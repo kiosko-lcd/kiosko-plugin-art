@@ -204,6 +204,11 @@ export const work = defineWidget<typeof workOptions, Picture | undefined>({
     if (!art || art.demo || !art.file) return undefined;
     return loadPicture(ctx.canvas, art);
   },
+  // Today's work is chosen but its picture isn't in (no file, or not loaded yet).
+  empty: ({ data, sources }) => {
+    const art = sources[SOURCE] as ArtData | undefined;
+    return !!art && !art.demo && !data;
+  },
   redraw: { everyMs: TURN_MS },
   render(g, ctx) {
     const { box } = ctx;

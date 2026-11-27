@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createCanvas } from '@napi-rs/canvas';
 import * as kit from '@loksly/lcd-canvas-kit';
 import { THEMES, createBaseContext, defaultsOf } from '@kiosko/sdk';
-import { renderWidget } from '@kiosko/sdk/testing';
+import { renderWidget, widgetState } from '@kiosko/sdk/testing';
 import { demoArt } from './demo.ts';
 import { testCanvas } from './fixtures.ts';
 import { lookOf, type Picture } from './picture.ts';
@@ -98,4 +98,13 @@ test('stale: said after the credit; before any data: a waiting line', () => {
   assert.ok(r.texts.some((t) => t.includes('not updated')), r.texts.join(' | '));
   const none = renderWidget(work, { size: { w: 320, h: 200 }, locale: 'en', demo: false, data: undefined, sources: {} });
   assert.deepEqual(none.texts, ["Finding today's work…"]);
+});
+
+test('empty: the work chosen but its picture not in yet; not with a picture, the demo or before any data', () => {
+  const { art, data } = picture(met);
+  assert.equal(widgetState(work, 'empty', { sources: { [SOURCE]: art }, data: undefined }), true);
+  assert.equal(widgetState(work, 'empty', { sources: { [SOURCE]: { ...art, file: null } }, data: undefined }), true);
+  assert.equal(widgetState(work, 'empty', { sources: { [SOURCE]: art }, data }), false);
+  assert.equal(widgetState(work, 'empty', { now: T }), false);
+  assert.equal(widgetState(work, 'empty', { demo: false }), false);
 });
